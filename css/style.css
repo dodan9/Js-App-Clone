@@ -1,3 +1,89 @@
 .hidden {
   display: none;
 }
+body {
+  margin: 0;
+  color: white;
+  background-color: black;
+}
+img {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+input {
+  background: none;
+  color: white;
+  border: none;
+}
+input[type="text"] {
+  border-bottom: 2px solid gray;
+  transition: 0.7s;
+}
+input::placeholder {
+  color: lightgray;
+}
+input:focus {
+  outline: none;
+  border-bottom: 2px solid white;
+}
+ul {
+  padding-left: 30px;
+  margin-bottom: 5px;
+}
+
+.container {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#clock,
+#weather {
+  display: inline-block;
+}
+#clock {
+  width: 95px;
+}
+#login-form {
+  margin-top: 200px;
+}
+#login-form input:first-child {
+  font-size: 70px;
+  margin-bottom: 5px;
+}
+#login-form input:last-child {
+  font-size: 30px;
+}
+
+#greeting {
+  font-size: 70px;
+  margin-top: 200px;
+}
+
+.todo-div {
+  border: 2px solid white;
+  border-radius: 10px 5px;
+  width: 300px;
+  padding: 10px;
+  font-size: 20px;
+}
+.todo-div h3 {
+  text-align: center;
+}
+.todo-div input {
+  width: 295px;
+}
+.todo-div button {
+  background: none;
+  border: none;
+  color: red;
+}
+
+#quote {
+  position: absolute;
+  transform: rotate(90deg);
+  width: 600px;
+  right: -270px;
+  top: 310px;
+  color: rgb(180, 180, 180);
+}
