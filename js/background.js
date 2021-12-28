@@ -1,4 +1,4 @@
-const images = ["terraria1.jpg", "terraria2.jpeg", "terraria3.jpeg"];
+const images = ["bg1.jpg", "bg2.jpg", "bg3.jpg"];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
@@ -6,3 +6,6 @@ const bgImage = document.createElement("img");
 bgImage.src = `img/${chosenImage}`;
 
 document.body.appendChild(bgImage);
+
+const container = document.querySelector(".container");
+container.style.height = `${window.innerHeight}px`;
